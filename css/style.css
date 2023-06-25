@@ -46,32 +46,6 @@ header {
   color: #1b2739;
 }
 
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo {
-  position: absolute;
-  justify-content: center;
-  text-align: center;
-}
-
-h1 {
-  color: white;
-  font-size: 3.5rem;
-  text-shadow: 0.2rem 0.2rem 1rem black;
-}
-.portada {
-  width: 100%;
-  display: none;
-}
-
-.portadamobile {
-  width: 100%;
-}
-
 .wsp {
   width: 70px;
   position: fixed;
@@ -96,6 +70,69 @@ h1 {
   font-size: 1rem;
 }
 
+@media (min-width: 1200px) {
+  .nav-underline {
+    display: flex;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .logo {
+    width: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .flexfooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+  }
+  .wsp {
+    width: 100px;
+  }
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 0.2rem 0.2rem 1rem black;
+}
+
+.portada {
+  width: 100%;
+  display: none;
+}
+
+.portadamobile {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .portadamobile {
+    display: none;
+  }
+  .portada {
+    display: block;
+  }
+  .titulo {
+    position: absolute;
+  }
+}
 .sobremi {
   width: 100%;
   background-color: #c6c6c5;
@@ -114,6 +151,16 @@ h1 {
   font-size: 1.2rem;
 }
 
+@media (min-width: 1200px) {
+  .sobremi-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .sobremi-text {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
 .galeria-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -175,49 +222,4 @@ h1 {
   padding: 1rem;
 }
 
-@media (min-width: 1200px) {
-  .nav-underline {
-    display: flex;
-  }
-
-  .navbar-toggler {
-    display: none;
-  }
-  .logo {
-    width: 10%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-  }
-  .flexfooter {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 1rem;
-  }
-  .sobremi-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .sobremi-text {
-    font-size: 2rem;
-    text-align: left;
-  }
-  .wsp {
-    width: 100px;
-  }
-
-  .portadamobile {
-    display: none;
-  }
-
-  .portada {
-    display: block;
-  }
-
-  .titulo {
-    position: absolute;
-  }
-}
+/*# sourceMappingURL=style.css.map */
