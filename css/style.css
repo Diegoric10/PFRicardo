@@ -250,6 +250,88 @@ h1 {
     display: flex;
     background-color: #c6c6c5;
   }
+  .card-texto h3 {
+    font-size: 3.5rem;
+  }
+  .card-texto p {
+    font-size: 2rem;
+  }
+}
+.form {
+  width: 340px;
+  height: 440px;
+  background: #c6c6c5;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  position: relative;
+}
+
+h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #1b2739;
+  border-bottom: 3px solid #1b2739;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+input:focus {
+  border-bottom: 2px solid #1b2739;
+}
+
+p:before {
+  display: none;
+}
+
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 48px 0 0;
+  border-radius: 8px;
+  background: #1b2739;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #c1712f;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .form {
+    width: 90%;
+    height: 700px;
+    margin-top: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  input {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  button {
+    padding: 16px 48px;
+    margin-top: 48px;
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
