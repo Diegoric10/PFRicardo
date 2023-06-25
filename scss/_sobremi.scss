@@ -1,0 +1,28 @@
+.sobremi {
+  width: 100%;
+  background-color: #c6c6c5;
+}
+
+.sobremi-foto {
+  max-width: 100%;
+  height: auto;
+}
+
+.sobremi-text {
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1200px) {
+  .sobremi-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .sobremi-text {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
