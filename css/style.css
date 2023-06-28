@@ -110,8 +110,9 @@ header {
 
 h1 {
   color: white;
-  font-size: 3.5rem;
-  text-shadow: 0.2rem 0.2rem 1rem black;
+  font-size: 5rem;
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  animation: inicio 2s ease;
 }
 
 .portada {
@@ -123,6 +124,17 @@ h1 {
   width: 100%;
 }
 
+@keyframes inicio {
+  0% {
+    opacity: 0;
+    font-size: 3.5rem;
+  }
+  100% {
+    opacity: 1;
+    font-size: 5rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+  }
+}
 @media (min-width: 1200px) {
   .portadamobile {
     display: none;
@@ -132,6 +144,24 @@ h1 {
   }
   .titulo {
     position: absolute;
+  }
+  h1 {
+    color: white;
+    font-size: 10rem;
+    text-shadow: 0.2rem 0.2rem 1rem black;
+    animation: inicio2 2s ease;
+  }
+  @keyframes inicio2 {
+    0% {
+      opacity: 0;
+      font-size: 3.5rem;
+      text-shadow: 0.2rem 0.2rem 1rem black;
+    }
+    100% {
+      opacity: 1;
+      font-size: 10rem;
+      text-shadow: 1rem 1rem 2rem black;
+    }
   }
 }
 .sobremi {
