@@ -1,3 +1,7 @@
+body {
+  background-color: #c6c6c5;
+}
+
 .card-container {
   width: 100%;
   display: block;
@@ -18,7 +22,12 @@
 }
 
 .card-texto {
+  font-family: "Roboto Light", sans-serif;
   padding: 1rem;
+}
+
+h3 {
+  font-family: agency fb, sans-serif;
 }
 
 @media (min-width: 1200px) {
@@ -33,6 +42,6 @@
   }
 
   .card-texto p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
