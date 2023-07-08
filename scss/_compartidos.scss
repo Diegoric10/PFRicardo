@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #c6c6c5;
+  background-color: map-get($colores, "gris");
 }
 
 .logo {
@@ -34,16 +34,16 @@ header {
 }
 
 .nav-item {
-  color: #1b2739;
+  color: map-get($colores, "azul");
   font-size: 2rem;
 }
 
 .nav-link:hover {
-  color: #c1712f;
+  color: map-get($colores, "naranja");
 }
 
 .nav-link {
-  color: #1b2739;
+  color: map-get($colores, "azul");
 }
 
 .wsp {
@@ -55,7 +55,7 @@ header {
 }
 
 .footer {
-  background-color: #c6c6c5;
+  background-color: map-get($colores, "gris");
   width: 100%;
   margin: 0;
 }
@@ -67,7 +67,7 @@ header {
 }
 
 .copy {
-  color: #1b2739;
+  color: map-get($colores, "azul");
   font-size: 1rem;
 }
 
